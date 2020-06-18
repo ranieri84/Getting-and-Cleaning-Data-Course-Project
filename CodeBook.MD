@@ -59,6 +59,7 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
+## Scripited File Description
 ### tidydata.txt File content
 tidydata.txt is a subset of original data described above.
 
