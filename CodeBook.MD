@@ -1,8 +1,8 @@
 # CodeBook
 ## Original Raw data
 
-Feature Selection 
-=================
+### Feature Selection 
+
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -59,8 +59,19 @@ tBodyAccJerkMean
 tBodyGyroMean
 tBodyGyroJerkMean
 
-## tidydata.txt File content
-Data here is a subset of original data described above.
+### tidydata.txt File content
+tidydata.txt is a subset of original data described above.
+
+Activity variable describes one of those activities that are self-described
+WALKING
+WALKING_UPSTAIRS
+WALKING_DOWNSTAIRS
+SITTING
+STANDING
+LAYING
+
+Subject is the variable that indicates from who the data was colected
+
 
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions for time and frequency domain
@@ -82,17 +93,9 @@ frequencyBBodyAccJerkMag
 frequencyBBodyGyroMag
 frequencyBBodyGyroJerkMag
 
-The set of variables that were estimated from these signals are: 
+The set of variables that were estimated from these signals and grouped by Activity and Subject are: 
 
 mean(): Mean value
 std(): Standard deviation
 
-Activity variable describes one of those activities that are self-described
-WALKING
-WALKING_UPSTAIRS
-WALKING_DOWNSTAIRS
-SITTING
-STANDING
-LAYING
 
-Subject is the variable that indicates the from who the data was colected
